@@ -1,13 +1,6 @@
 ---
 // src/pages/index.astro
-let data;
 
-try {
-  const response = await fetch('https://dyne-dashboard-express.vercel.app/api/data');
-  data = await response.json();
-} catch (error) {
-  console.error('Error al obtener datos:', error);
-}
 ---
 
 <!DOCTYPE html>
