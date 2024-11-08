@@ -1,21 +1,9 @@
 ---
-// src/pages/index.astro
-
+import Layout from "../layouts/Layout.astro";
 ---
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Ejemplo de CORS con Astro y Express</title>
-</head>
-<body>
-  <h1>Ejemplo de CORS</h1>
-  <button id="send">fetch</button>
-  <script>
-    document.getElementById('send').addEventListener('click', () => {
-      fetch('/api')
-    })
-  </script>
-</body>
-</html>
+<Layout>
+  landing page, con contacto, y boton de ingreso para admins
+  <br />
+  <a href="/login" class="hover:cursor-pointer select-none bg-green-600 px-3 py-2 text-white font-bold border-2 border-green-700 hover:bg-green-700 hover:border-green-800 first-letter:uppercase" id="btnIngresar">Ingresar</a>
+</Layout>
